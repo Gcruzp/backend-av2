@@ -1,76 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trioflix</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  
-</head>
-<body>
-  <header class="header">
-    <img src="trioflix.png" alt="Logo" class="logo">
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#quem-somos">Quem Somos</a></li>
-        <li><a href="#localizacao">Localização</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trioflix</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1>TRIOFLIX</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#quem-somos">Quem Somos</a></li>
+          <li><a href="#localizacao">Localização</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main class="main-content">
-    <section id="inicio" class="section">
-      <div class="content">
-        <div>
-        <div id="chart"></div>
-        <iframe style="background: #21313C;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);" width="640" height="480" src="https://charts.mongodb.com/charts-project-0-ikywd/embed/charts?id=6578c843-1831-4393-8ee7-d6f59ef42cfa&maxDataAge=300&theme=dark&autoRefresh=true"></iframe>
-      </div>
-      <div id="chart"></div>
-      <iframe style="background: #21313C;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);" width="640" height="480" src="https://charts.mongodb.com/charts-project-0-ikywd/embed/charts?id=6578b3b9-b5bb-4a2e-8d53-028dcd67dd4d&maxDataAge=300&theme=dark&autoRefresh=true"></iframe>
-      </div>
-      <div class="members-container">
-        <div class="member">
-          <img src="cruz.png" alt="Membro 1">
-          <p>Gabriel Cruz</p>
+    <main class="main-content">
+      <section id="inicio" class="section">
+        <h2>Dashboards</h2>
+        <div class="dashboard">
+          <div>
+            <div id="chart"></div>
+            <iframe
+              class="grafico-1"
+              src="https://charts.mongodb.com/charts-project-0-ikywd/embed/charts?id=6578c843-1831-4393-8ee7-d6f59ef42cfa&maxDataAge=300&theme=dark&autoRefresh=true"
+            ></iframe>
+            <div class="member">
+              <img src="/assets/mateus.png" alt="Membro 3" />
+              <p>Mateus Rebelo</p>
+            </div>
+          </div>
+          <div>
+            <div id="chart"></div>
+            <iframe
+              class="grafico-2"
+              src="https://charts.mongodb.com/charts-project-0-ikywd/embed/charts?id=6578b3b9-b5bb-4a2e-8d53-028dcd67dd4d&maxDataAge=300&theme=dark&autoRefresh=true"
+            ></iframe>
+            <div class="member">
+              <img src="/assets/cruz.png" alt="Membro 1" />
+              <p>Gabriel Cruz</p>
+            </div>
+          </div>
         </div>
-        <div class="member">
-          <img src="caio.png" alt="Membro 2">
-          <p>Caio Henrique</p>
-        </div>
-        <div class="member">
-          <img src="mateus.png" alt="Membro 3">
-          <p>Mateus Rebelo</p>
-        </div>
-      </div>
-      
+      </section>
       <section id="quem-somos" class="section">
         <div class="content">
           <h2>Quem Somos</h2>
-          <p>Somos um grupo de entusiastas de tecnologia da Universidade Uninassau
-          apaixonados por inovação e movidos pelo desafio de criar um sistema avançado
-          de análise de usuários para a Netflix. Nosso objetivo principal é estudar de
-          forma aprofundada o comportamento dos usuários ao utilizar essa renomada plataforma
-          de streaming, bem como explorar aspectos relacionados à interface, preferências de conteúdo,
-          interações e experiência do usuário. Acreditamos que essa análise detalhada é fundamental
-          para contribuir com insights valiosos e aprimorar continuamente a plataforma, proporcionando uma
-          experiência mais personalizada e envolvente para os espectadores.</p>
+          <div class="subtext">
+            <p>
+              Somos um grupo de entusiastas de tecnologia da Universidade
+              Uninassau apaixonados por inovação e movidos pelo desafio de criar
+              um sistema avançado de análise de usuários para a Netflix. Nosso
+              objetivo principal é estudar de forma aprofundada o comportamento
+              dos usuários ao utilizar essa renomada plataforma de streaming,
+              bem como explorar aspectos relacionados à interface, preferências
+              de conteúdo, interações e experiência do usuário. Acreditamos que
+              essa análise detalhada é fundamental para contribuir com insights
+              valiosos e aprimorar continuamente a plataforma, proporcionando
+              uma experiência mais personalizada e envolvente para os
+              espectadores.
+            </p>
+          </div>
         </div>
-        <section id="localizacao" class="section">
-          <a href="https://www.google.com.br/maps/place/UNINASSAU+-+Block+A/@-8.05165,-34.9058189,17z/data=!3m1!4b1!4m6!3m5!1s0x7ab18e1236c4cc5:0xcf30335f63037230!8m2!3d-8.05165!4d-34.903244!16s%2Fg%2F11c0rt9zzp?entry=ttu">
-            <img src="localizacao.png" alt="Localização no Mapa">
+      </section>
+      <section id="localizacao" class="section">
+        <h2>Localização</h2>
+        <div class="location">
+          <a
+            href="https://www.google.com.br/maps/place/UNINASSAU+-+Block+A/@-8.05165,-34.9058189,17z/data=!3m1!4b1!4m6!3m5!1s0x7ab18e1236c4cc5:0xcf30335f63037230!8m2!3d-8.05165!4d-34.903244!16s%2Fg%2F11c0rt9zzp?entry=ttu"
+          >
+            <img src="/assets/localizacao.png" alt="Localização no Mapa" />
           </a>
-        </section>
-        
+          <img
+            id="berlin"
+            src="/assets/La-Casa-De-Papel-PNG-Photo.png"
+            alt=""
+          />
+        </div>
+      </section>
+    </main>
 
-  </main>
+    <footer class="footer">
+      <p>&copy; Todos os direitos reservados - Trioflix</p>
+    </footer>
 
-  <footer class="footer">
-    <p>&copy; Todos os direitos reservados - Trioflix</p>
-  </footer>
-
-  <script src="script.js"></script>
-  <script src="https://unpkg.com/@mongodb-js/charts-embed-dom@beta"></script> 
-</body>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/@mongodb-js/charts-embed-dom@beta"></script>
+  </body>
 </html>
